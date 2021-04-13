@@ -20,6 +20,8 @@ window.Vue = require('vue').default;
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('feed-component', require('./components/FeedComponent.vue').default);
+Vue.component('audio-player', require('./components/AudioPlayerComponent.vue').default);
+
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

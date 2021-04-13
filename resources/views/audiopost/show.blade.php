@@ -17,9 +17,7 @@
                 <div class="card-body">
                     <img src="{{ $audiopost->getImage() }}" width="100%">
 
-                    <audio controls>
-                        <source src="{{ Storage::url($audiopost->audio_file_path) }}" />
-                    </audio>
+                    <audio-player url="{{ Storage::url($audiopost->audio_file_path) }}" playerid="audio-player" > </audio-player>
                     <hr>
                     {{ $audiopost->description }}
                 </div>
